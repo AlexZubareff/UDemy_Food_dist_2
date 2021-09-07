@@ -434,16 +434,7 @@ modalTrigger.forEach(item => {
         }
 
         currentSlideIndex();
-        // if (slides.length < 10) {
-        //     current.textContent = `0${slideIndex}`;
-        // } else {
-        //     current.textContent = slideIndex;
-        // }
-
         changeDotsOpacity (dots);
-
-        // dots.forEach(dot => dot.style.opacity = '.5');
-        // dots[slideIndex - 1].style.opacity = 1;
     });
 
     prev.addEventListener('click', () => {
@@ -461,18 +452,8 @@ modalTrigger.forEach(item => {
             slideIndex--;
         }
 
-
         currentSlideIndex();
-        // if (slides.length < 10) {
-        //     current.textContent = `0${slideIndex}`;
-        // } else {
-        //     current.textContent = slideIndex;
-        // }
-
         changeDotsOpacity (dots);
-
-        // dots.forEach(dot => dot.style.opacity = '.5');
-        // dots[slideIndex - 1].style.opacity = 1;
     });
 
     dots.forEach(dot => {
@@ -485,17 +466,7 @@ modalTrigger.forEach(item => {
             slidesFiled.style.transform = `translateX(-${offset}px)`;
 
             currentSlideIndex();
-            // if (slides.length < 10) {
-            //     current.textContent = `0${slideIndex}`;
-            // } else {
-            //     current.textContent = slideIndex;
-            // }
-
-
             changeDotsOpacity (dots);
-
-            // dots.forEach(dot => dot.style.opacity = '.5');
-            // dots[slideIndex - 1].style.opacity = 1;
         });
     });
 
