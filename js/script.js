@@ -1,3 +1,6 @@
+require('es6-promise').polyfill();
+import 'nodelist-foreach-polyfill';
+
 import tabs from './modules/tabs';
 import modal from './modules/modal';
 import timer from './modules/timer';
@@ -23,7 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
         totalCounter: '#total',
         currentCounter: '#current',
         wrapper: '.offer__slider-wrapper',
-        filed:'.offer__slider-inner',
+        filed: '.offer__slider-inner',
         slide: '.offer__slide'
     });
     cards();
